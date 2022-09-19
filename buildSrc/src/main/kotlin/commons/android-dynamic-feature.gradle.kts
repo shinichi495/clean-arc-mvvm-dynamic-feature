@@ -1,6 +1,11 @@
 package commons
 
-import dependencies.AnnotationProcessorsDependencies
+import BuildAndroidConfig
+import BuildModules
+import BuildProductDimensions
+import ProductFlavorDevelop
+import ProductFlavorProduction
+import ProductFlavorQA
 import dependencies.Dependencies
 import extensions.addTestsDependencies
 
@@ -77,7 +82,7 @@ junitJacoco {
 dependencies {
     implementation(project(BuildModules.APP))
     implementation(project(BuildModules.CORE))
-    implementation(project(BuildModules.Commons.UI))
+//    implementation(project(BuildModules.Commons.UI))
 
     implementation(Dependencies.APPCOMPAT)
     implementation(Dependencies.COROUTINES)
@@ -91,8 +96,6 @@ dependencies {
     implementation(Dependencies.CONSTRAIN_LAYOUT)
     implementation(Dependencies.TIMBER)
     implementation(Dependencies.LOGGING)
-
-    kapt(AnnotationProcessorsDependencies.DATABINDING)
 
     testImplementation(project(BuildModules.Libraries.TEST_UTILS))
     addTestsDependencies()

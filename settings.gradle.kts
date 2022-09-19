@@ -5,8 +5,7 @@ include(
     ":core",
     ":features:main",
     ":commons:ui",
+    ":commons:views",
     ":libraries:test_util"
 )
-
 rootProject.buildFileName = "build.gradle.kts"
-include(":commons:views")

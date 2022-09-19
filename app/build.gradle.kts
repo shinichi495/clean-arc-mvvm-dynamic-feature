@@ -29,6 +29,7 @@ plugins {
     id(BuildPlugins.KOTLIN_ALLOPEN)
     id(BuildPlugins.NAVIGATION_SAFE_ARGS)
     id(BuildPlugins.JACOCO)
+    id("org.jetbrains.kotlin.android")
 }
 
 
@@ -71,11 +72,12 @@ android {
     }
 
     dynamicFeatures.add(BuildModules.Features.HOME)
-    dynamicFeatures.add(BuildModules.Features.MAIN)
+//    dynamicFeatures.add(BuildModules.Features.MAIN)
     dynamicFeatures.add(BuildModules.Features.INDENTITY)
 
     buildFeatures {
         dataBinding = true
+        viewBinding = true
     }
 
 
@@ -114,10 +116,6 @@ android {
     }
 }
 
-//junitJacoco {
-//    includeNoLocationClasses = true
-//}
-
 dependencies {
     implementation(project(BuildModules.CORE))
     implementation(Dependencies.APPCOMPAT)
@@ -127,6 +125,12 @@ dependencies {
     implementation(Dependencies.TIMBER)
     implementation(Dependencies.LOGGING)
     implementation(Dependencies.PLAY_CORE)
+    implementation("androidx.appcompat:appcompat:1.5.1")
+    implementation("com.google.android.material:material:1.6.1")
+    implementation("androidx.annotation:annotation:1.4.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
     debugImplementation(DebugDependencies.LEAKCANARY)
     addTestsDependencies()
 }

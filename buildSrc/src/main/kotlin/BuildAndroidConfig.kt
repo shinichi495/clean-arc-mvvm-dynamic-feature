@@ -1,7 +1,7 @@
 object BuildAndroidConfig {
     const val APPLICATION_ID = "com.hdbank.hd"
 
-    const val BUILD_TOOL_VERSION = "30.0.2"
+    const val BUILD_TOOL_VERSION = "30.0.3"
     const val COMPILE_SDK_VERSION = 32
     const val MIN_SDK_VERSION = 21
     const val TARGET_SDK_VERSION = 32

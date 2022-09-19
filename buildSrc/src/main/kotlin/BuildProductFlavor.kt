@@ -23,8 +23,6 @@ interface BuildProductFlavor {
     fun appCreate(
         namedDomainObjectContainer: NamedDomainObjectContainer<ApplicationProductFlavor>
     ): ApplicationProductFlavor
-
-
 }
 
 object ProductFlavorDevelop : BuildProductFlavor {

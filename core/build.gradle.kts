@@ -1,6 +1,4 @@
 import dependencies.Dependencies
-import dependencies.AnnotationProcessorsDependencies.DATABINDING
-import extensions.kapt
 
 plugins {
     id("commons.android-library")
@@ -16,5 +14,5 @@ dependencies {
     implementation(Dependencies.LOGGING)
     implementation(Dependencies.MOSHI)
     implementation(Dependencies.MOSHI_KTX)
-    kapt(DATABINDING)
+
 }

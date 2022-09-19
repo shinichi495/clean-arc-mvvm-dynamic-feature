@@ -16,8 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HDBank"
         tools:targetApi="31">
+
         <activity
-            android:name="com.hdbank.main.ui.MainActivity"
+            android:name=".ui.main.ui.login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

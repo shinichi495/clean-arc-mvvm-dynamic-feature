@@ -1,5 +1,3 @@
-import dependencies.AnnotationProcessorsDependencies.DATABINDING
-import extensions.kapt
 import dependencies.Dependencies
 import extensions.implementation
 
@@ -18,5 +16,4 @@ dependencies {
     implementation(Dependencies.NAVIGATION_UI)
     implementation(Dependencies.PAGING)
     implementation(Dependencies.COIL)
-    kapt(DATABINDING)
 }
