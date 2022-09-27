@@ -81,6 +81,7 @@ dependencies {
     implementation(Dependencies.COROUTINES)
     implementation(Dependencies.COROUTINES_ANDROID)
     implementation(Dependencies.TIMBER)
+    implementation(Dependencies.KOIN)
     testImplementation(project(BuildModules.Libraries.TEST_UTILS))
     addTestsDependencies()
 }

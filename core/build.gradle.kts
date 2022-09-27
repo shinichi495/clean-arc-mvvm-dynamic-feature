@@ -5,6 +5,7 @@ plugins {
 }
 
 dependencies {
+    implementation(project(BuildModules.Commons.UTILS))
     implementation(Dependencies.LIFECYCLE_EXTENSIONS)
     implementation(Dependencies.NAVIGATION_UI)
     implementation(Dependencies.FRAGMENT_KTX)
@@ -13,6 +14,7 @@ dependencies {
     implementation(Dependencies.RETROFIT_CONVERTER)
     implementation(Dependencies.LOGGING)
     implementation(Dependencies.MOSHI)
+    implementation(Dependencies.MOSHI_CONVERTER)
     implementation(Dependencies.MOSHI_KTX)
 
 }

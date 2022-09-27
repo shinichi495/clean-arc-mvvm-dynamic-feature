@@ -14,11 +14,13 @@ object BuildDependenciesVersions {
     const val RETROFIT = "2.9.0"
     const val LOGGING = "4.10.0"
     const val MOSHI = "1.14.0"
+    const val MOSHI_CONVERTER = "2.7.0"
+
     const val COIL = "2.2.1"
     const val LEAKCANARY = "2.9.1"
     const val DATABINDING = "3.5.0"
     const val PLAY_CORE = "1.10.3"
-    const val KOIN = "3.2.0"
+    const val KOIN = "3.2.1"
 
     // Tests
     const val TEST = "1.4.0"
